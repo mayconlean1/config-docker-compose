@@ -1,0 +1,11 @@
+version: "3.8"
+
+services: 
+  translate_server:
+    build: ./translate
+    # command: npm start
+    ports: 
+      - "8080:8080"
+
+    volumes: 
+      - ./translate:/usr/app

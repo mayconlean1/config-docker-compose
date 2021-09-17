@@ -1,0 +1,13 @@
+{
+  "name": "app_ttyping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-images":"docker build -t translate_server ./translate",
+    "create_containers":"docker-compose up --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
