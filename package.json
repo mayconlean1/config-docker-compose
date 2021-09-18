@@ -4,8 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-images":"docker build -t translate_server ./translate",
-    "create_containers":"docker-compose up --build"
+    "dev-translate":"cd translate/ && npm run dev",
+
+    "manual-build-images":"docker build -t translate_server ./translate",
+
+    "create-containers":"docker-compose up --build",
+
+    "dev-first-start":"docker-compose up --build -d && cd ttyping/ && npm run dev-ttyping ",
+    "dev-start": "docker-compose start && cd ttyping/ && npm run dev-ttyping",
+
+    "start": "docker-compose up --build -d && cd ttyping/ && npm run build && start chrome http://localhost:3001/ && npm start"
   },
   "keywords": [],
   "author": "",

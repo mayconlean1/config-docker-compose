@@ -2,10 +2,28 @@ version: "3.8"
 
 services: 
   translate_server:
+    container_name: translate
     build: ./translate
     # command: npm start
+    environment:
+      - PORT=8080
     ports: 
       - "8080:8080"
+    # working_dir: /usr/app
+    # restart: always
 
     volumes: 
       - ./translate:/usr/app
+  
+
+  react_build_ttyping:
+    container_name: build_react
+    build:  ./ttyping
+    ports:
+      - "3001:3000"
+
+    environment: 
+      - LOCAL=172.19.0.1
+
+    volumes:
+        - ./ttyping:/usr/app
