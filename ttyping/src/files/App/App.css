@@ -1,0 +1,132 @@
+/* :root{
+  --global-width: 80%;
+  --paddingTextarea: 0 1rem 0 1rem;
+  --borderRadius : 5px;
+  --boxshadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+
+body{
+  background-color: rgb(238, 238, 238);
+  font-size: large;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; 
+} */
+
+.header{
+  /* background-color:yellow; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+}
+
+.header-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:1rem;
+  padding:1rem;
+  width: var(--global-width);
+}
+
+.main{
+  /* background-color:red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
+  padding:1rem;
+}
+
+.base-textarea{
+  background-color:white;
+  height: 5rem;
+  width: var(--global-width);
+  overflow: auto;
+  padding:var(--paddingTextarea);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--boxshadow); 
+}
+
+.bg-green{
+  background-color:lightgreen;
+}
+
+.bg-red{
+  background-color:lightcoral;
+}
+
+.bg-grey{
+  background-color:lightgrey;
+}
+
+.translate-area{
+  width: var(--global-width);
+  height:50px;
+  line-height: 24px;
+  overflow:auto;
+  
+  background-color:rgba(0, 0, 0, 0.082);
+  /* border: 1px solid black; */
+  border-radius: var(--borderRadius);
+  padding:var(--paddingTextarea);
+  box-shadow: var(--boxshadow); 
+}
+
+#typing-textarea{
+  width:0;
+  height:0;
+  resize: none;
+  outline: none;
+}
+
+.btn-add-text{
+  width: var(--global-width);
+  background-color:lightgrey;
+  text-align: center;
+  font-weight: bolder;
+  padding:1rem;
+  border-radius: var(--borderRadius);
+  cursor: pointer;
+  box-shadow: var(--boxshadow); 
+}
+
+.btn-add-text:hover{
+  background-color:rgb(218, 218, 218);
+ 
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  background-color:rgb(170, 170, 170);
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(83, 83, 83);
+  box-shadow: inset 0 0 5px white;  
+  /* border:1px solid grey; */
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(48, 48, 48); 
+}

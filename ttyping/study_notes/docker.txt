@@ -1,0 +1,15 @@
+*[] = deve ser substiuido pela informação descrita dentro
+
+Comunicação entre os conteiners
+
+Váriavel de ambiente:
+    Crie os conteiners:
+    No diretorio onde está o docker-compose.yml execute
+    > docker-compose up --build
+
+    Pegue o ip:
+    > docker inpect [id_app_server] | grep Gateway
+
+    Substitua dentro do arquivo do docker-compose.yml 
+        environment: 
+        - LOCAL=[ip Gateway]
