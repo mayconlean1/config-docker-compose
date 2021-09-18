@@ -3,7 +3,7 @@ const app = express()
 const translate = require('@vitalets/google-translate-api')
 const cors = require('cors')
 
-app.use(express.urlencoded({extended:true}))
+app.use(express.urlencoded({extended:true})) 
 app.use(express.json())
 
 app.use((req, res, next)=>{ //config CORS
